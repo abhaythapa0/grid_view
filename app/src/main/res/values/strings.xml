@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Level_6_2025</string>
+    <string name="txt_description">Logic plays a crucial role in AI by providing a formal framework for representing knowledge and reasoning.
+        Different types of logic are suited to different kinds of reasoning tasks,
+        from simple propositional logic to more complex systems like first-order logic, modal logic, and probabilistic logic.</string>
+</resources>

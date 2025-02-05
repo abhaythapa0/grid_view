@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+<!--   <ImageView-->
+<!--       android:layout_width="200dp"-->
+<!--       android:layout_height="200dp"-->
+<!--       android:src="@drawable/favicon"-->
+<!--       android:scaleType="fitCenter"-->
+<!--       android:focusable="true"-->
+<!--       android:layout_marginBottom="10dp"-->
+
+<!--       />-->
+
+
+
+
+   <de.hdodenhof.circleimageview.CircleImageView
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       android:id="@+id/profile_image"
+       android:layout_width="200dp"
+       android:layout_height="200dp"
+       android:src="@drawable/favicon"
+       android:scaleType="centerCrop"
+       android:layout_marginBottom="10dp"
+    />
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="70dp"
+       android:hint="Enter Name"
+       android:textColorHint="@color/black"
+       android:inputType="text"
+       android:focusable="true"
+       android:background="@drawable/editbox"
+       android:paddingHorizontal="15dp"
+      />
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="16dp"
+       app:passwordToggleEnabled="true"
+
+       >
+
+      <EditText
+          android:id="@+id/txt"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Enter Email"
+          android:inputType="text"
+          android:background="@drawable/editbox"
+
+          />
+   </com.google.android.material.textfield.TextInputLayout>
+
+   <Button
+       android:id="@+id/btn"
+       android:layout_width="match_parent"
+       android:layout_height="70dp"
+       android:layout_marginTop="20dp"
+       android:text="Click me"
+       android:textSize="22sp"
+       android:textColor="#FD5703"
+       android:focusable="true"
+       android:drawableLeft="@drawable/baseline_attach_file_24"
+      />
+
+
+</LinearLayout>
